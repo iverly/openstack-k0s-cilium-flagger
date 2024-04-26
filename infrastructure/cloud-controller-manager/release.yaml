@@ -18,4 +18,5 @@ spec:
       enabled: true
       name: os-cloud-credentials
       create: false
-    nodeSelector: {}
+    nodeSelector:
+      node-role.kubernetes.io/control-plane: null
