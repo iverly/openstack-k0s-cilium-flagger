@@ -149,10 +149,10 @@ module "flux_install" {
 module "flux_sync" {
   source = "./modules/kube-flux-sync"
 
-  name      = "openstack-k0s-apko"
+  name      = "openstack-k0s-cilium-istio-kratos"
   path      = "cluster"
   namespace = "flux-system"
-  git_url   = "https://github.com/iverly/openstack-k0s-cilium-flagger"
+  git_url   = "https://github.com/iverly/openstack-k0s-cilium-istio-kratos"
 
   depends_on = [module.k0s_cluster, module.create_namespaces, module.cilium_install, module.flux_install]
 }
