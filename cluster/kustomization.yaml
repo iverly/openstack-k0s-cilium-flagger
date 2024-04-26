@@ -7,5 +7,6 @@ resources:
   - infrastructure/cinder-csi.yaml
   - infrastructure/cloud-controller-manager.yaml
   - infrastructure/istio-crds.yaml
+  - infrastructure/istio-gateway.yaml
   - infrastructure/istio.yaml
   - infrastructure/weave-gitops.yaml
