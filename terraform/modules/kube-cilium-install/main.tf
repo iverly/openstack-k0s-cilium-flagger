@@ -30,4 +30,21 @@ resource "helm_release" "this" {
     name  = "hubble.ui.enabled"
     value = "true"
   }
+
+  # disable l7 proxy since istio will handle it
+  set {
+    name  = "l7Proxy"
+    value = "false"
+  }
+
+  # set mandatory settings to work with istio
+  set {
+    name  = "socketLB.hostNamespaceOnly"
+    value = "true"
+  }
+
+  set {
+    name  = "cni.exclusive"
+    value = "false"
+  }
 }
