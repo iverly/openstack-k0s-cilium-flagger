@@ -6,4 +6,6 @@ resources:
   - infrastructure/cert-manager.yaml
   - infrastructure/cinder-csi.yaml
   - infrastructure/cloud-controller-manager.yaml
+  - infrastructure/istio-crds.yaml
+  - infrastructure/istio.yaml
   - infrastructure/weave-gitops.yaml
